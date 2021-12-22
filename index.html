@@ -1,4 +1,4 @@
-<!-- Roughly based on this tutorial
+<!-- Slider part roughly based on this tutorial
 https://www.youtube.com/watch?v=wWWNrANNO1k
 and this codepen
 https://codepen.io/bradtraversy/pen/oVPBaa -->
@@ -11,67 +11,93 @@ https://codepen.io/bradtraversy/pen/oVPBaa -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Screen Slider</title>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link rel="stylesheet" href="css/pico.classless.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-theme="dark">
+ 
+  <!-- Slider -->
     <div class="slider">
+
         <div class="slide current">
+          <model-viewer src="assets/cubes.glb" >
           <div class="content">
-            <h1>Slide One</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
+              <h1 style="font-size:5em;">Sweat</h1>
+            </div>
+          </model-viewer>
         </div>
+
         <div class="slide">
+          <model-viewer src="assets/cubes.glb" >
           <div class="content">
-            <h1>Slide Two</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
+              <h1>Picking a site</h1>
+              <p>
+                A location is selected for the lodge to be constructed.
+              </p>
+            </div>
+          </model-viewer>
         </div>
+
         <div class="slide">
+          <model-viewer src="assets/cubes.glb" >
           <div class="content">
-            <h1>Slide Three</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
+              <h1>Building the lodge</h1>
+              <p>
+                A base structure is raised and firepits are built to heat the grandmothers.
+              </p>
+            </div>
+          </model-viewer>
         </div>
+
         <div class="slide">
+          <model-viewer src="assets/cubes.glb" >
           <div class="content">
-            <h1>Slide Four</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
+              <h1>Preparing for ceremony</h1>
+              <p>
+                As the lodge is covered, the path from the firepit to the entrance is lined with cedar.
+              </p>
+            </div>
+          </model-viewer>
         </div>
+
         <div class="slide">
+          <model-viewer src="assets/cubes.glb" >
           <div class="content">
-            <h1>Slide Five</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
+              <h1>The fire</h1>
+              <p>
+                The ceremony begins, intent is set and everybody but one enter the lodge.
+              </p>
+            </div>
+          </model-viewer>
         </div>
+
         <div class="slide">
+          <model-viewer src="assets/cubes.glb" >
           <div class="content">
-            <h1>Slide Six</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
-              maxime, voluptatibus labore doloremque vero!
-            </p>
-          </div>
+              <h1>The sweat</h1>
+              <p>
+                Once inside the lodge, the grandmothers are brough in to start the sweat.
+              </p>
+            </div>
+          </model-viewer>
         </div>
-      </div>
+
+        <div class="slide">
+          <model-viewer src="assets/cubes.glb" >
+          <div class="content">
+              <h1>Sweat</h1>
+              <p>
+
+              </p>
+            </div>
+          </model-viewer>
+        </div>
+
+    </div>
+
+    <!-- Buttons -->
     <div class="buttons">
         <button id="prev"><i data-feather="arrow-left"></i></button>
         <button id="next"><i data-feather="arrow-right"></i></button>
