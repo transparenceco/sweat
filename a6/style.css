@@ -1,0 +1,31 @@
+.clearglass{
+    background-color:rgba(115, 130, 140, 0.25);
+    // box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 40px );
+    -webkit-backdrop-filter: blur( 40px );
+    border-radius: 20px;
+   // border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.darkglass{
+    background-color:rgba(50, 50, 50, 0.5);
+     // box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur( 40px );
+      -webkit-backdrop-filter: blur( 40px );
+      border-radius: 20px;
+     // border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.btn{
+    background-color: rgb(60, 114, 114);
+    border-radius: 50px;
+    border: 1px solid rgba(159, 159, 159, 0.18);
+}
+.btn2{
+    background-color: rgb(7, 172, 172);
+    border-radius: 50px;
+    border: 1px solid rgba(159, 159, 159, 0.18);
+}
+
+/* 
+style="margin-left:10px;border-radius: 50px;" */

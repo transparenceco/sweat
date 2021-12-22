@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A6</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        HTML, body {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            background-color: #13191e;
+        }
+        model-viewer{
+            height:100vh;
+            width:100vw;
+            display:block;
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <model-viewer src="cubes.glb" id="orbit-demo" interpolation-decay="200" >
+
+    <div style="margin:0 10% 0 10%; padding:10% 0 10% 0;">
+        <header>
+            <hgroup>
+                <h1>Hello World</h1>
+                <h4>This is copy on top of 3D graphics.</h4>
+                <p>Using a simple css framework like pico (specifically classless), we can build responsive, good looking pages in no time.</p>
+
+                    <article class="darkglass" ><h4>.darkglass class</h4>
+                    <button class="btn">Rethink</button>
+                    <button class="btn2">Continue</button>
+            
+            </hgroup>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+
+            <small>Copyright Transparence 2021.</small>
+
+        </footer>
+    </div>
+</model-viewer>
+<script>
+    (() => {
+      const modelViewer = document.querySelector('#orbit-demo');
+      const orbitCycle = [
+        '45deg 55deg 4m',
+        '-60deg 110deg 2m',
+        modelViewer.cameraOrbit
+      ];
+    
+      setInterval(() => {
+        const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
+        modelViewer.cameraOrbit =
+            orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
+      }, 3000);
+    })();
+</script>
+
+
+</body>
+</html>
