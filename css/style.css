@@ -108,7 +108,7 @@ HTML, body {
     }
 
     .slide.current .content {
-        transform: translateY(-300px);
+        transform: translateY(-400px);
     }
 }
 
