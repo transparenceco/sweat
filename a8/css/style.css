@@ -1,0 +1,44 @@
+
+.logo {
+    width: 240px;
+    height: 61px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    .logo {
+        background-image: url(../assets/Transparence_Logo.png);
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .logo {
+        background-image: url(../assets/Transparence_Logo_white.png);
+    }
+}
+
+HTML, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #13191e;
+}
+model-viewer{
+    background-color: #13191e;
+    height:100vh;
+    width:100vw;
+    display:block;
+
+}
+body>main{
+  margin:0px;
+  padding:0px;
+}
+
+.content{
+    padding:50px;
+
+}

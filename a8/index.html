@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pico.classless.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>Sweat</title>
+  </head>
+
+  <body data-barba="wrapper">
+    <a href="index.html">home</a>
+    <main data-barba="container" data-barba-namespace="home">
+
+      <model-viewer auto-rotate-delay="0" bounds="tight" src="/assets/0.glb" max-camera-orbit="auto auto .1m" auto-rotate camera-orbit="100deg 75deg 2cm" camera-target="0m 0m 0m">
+        <div class="content">
+          <hgroup>
+            <h1>Sweat</h1>
+            <p>A storytelling experiment using ThreeJS and PicoCSS</p>
+          </hgroup>
+          <a href="1.html">start</a>
+        </div>
+      </model-viewer>
+
+    </main>
+
+
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- load gsap animation library (minified version) -->
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="barba.js"></script>
+
+  </body>
+</html>
