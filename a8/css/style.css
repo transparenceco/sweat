@@ -13,6 +13,11 @@ model-viewer{
     display:block;
 
 }
+
+model-viewer {
+    --poster-color: dark-brown;
+  }
+
 body>main{
   margin:0px;
   padding:0px;
