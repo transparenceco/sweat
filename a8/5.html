@@ -6,22 +6,21 @@
     <link rel="stylesheet" href="css/pico.classless.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
     <title>Sweat 5</title>
   </head>
 
   <body data-barba="wrapper">
-    <main data-barba="container" data-barba-namespace="3">
+    <main data-barba="container" data-barba-namespace="5">
 
-      <model-viewer auto-rotate-delay="0" bounds="tight" src="/assets/5.glb" max-camera-orbit="auto auto .1m" auto-rotate camera-orbit="100deg 75deg 2cm" camera-target="0m 0m 0m">
+      <model-viewer auto-rotate-delay="0" bounds="tight" src="assets/5.glb" max-camera-orbit="auto auto .1m" auto-rotate camera-orbit="100deg 75deg 2cm" camera-target="0m 0m 0m">
         <div class="content">
           <hgroup>
             <h1>Preparing for ceremony</h1>
             <p>As the lodge is covered, the path to its entrance from the firepit is lined with cedar.
               The fire is started to heat the stones that will go inside the lodge.</p>
           </hgroup>
-          <a href="4.html"><i data-feather="arrow-left-circle"></i></a><br>
-          <a href="6.html"><i data-feather="arrow-right-circle"></i></a>
+          <a href="4.html"><img src="assets/arrow-left-circle.svg" alt="home" class="icon"></a>
+          <a href="6.html"><img src="assets/arrow-right-circle.svg" alt="home" class="icon"></a>
         </div>
       </model-viewer>
 
@@ -32,7 +31,6 @@
     <!-- load gsap animation library (minified version) -->
     <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
     <script src="barba.js"></script>
-    <script>feather.replace()</script>
     
   </body>
   </html>
