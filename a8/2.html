@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/pico.classless.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <title>Sweat</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Sweat 2</title>  
   </head>
 
   <body data-barba="wrapper">
@@ -18,12 +19,19 @@
             <h1>Building the lodge</h1>
             <p>A base structure is raised</p>
           </hgroup>
-          <a href="1.html">Go to the previous page</a><br>
-          <a href="2b.html">Go to the next page</a>
+          <a href="1.html"><i data-feather="arrow-left-circle"></i></a><br>
+          <a href="2b.html"><i data-feather="arrow-right-circle"></i></a>
         </div>
       </model-viewer>
 
     </main>
+    
+    <!-- unpkg -->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- load gsap animation library (minified version) -->
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="barba.js"></script>
+    <script>feather.replace()</script>
     
   </body>
   </html>
