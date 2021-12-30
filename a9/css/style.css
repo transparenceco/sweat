@@ -1,0 +1,42 @@
+
+HTML, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #13191e;
+
+}
+model-viewer{
+    background-color: #13191e;
+    height:100vh;
+    width:100vw;
+    display:block;
+
+}
+
+model-viewer {
+    --poster-color: dark-brown;
+  }
+
+body>main{
+  margin:0px;
+  padding:0px;
+  background-color: #13191e;
+}
+
+.content{
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+}
+
+.icon{
+    filter: brightness(100%);
+    width: 60px;
+}
+
+a .icon {
+    filter: brightness(30%);
+    margin-right:20px;
+    width: 50px;
+}
